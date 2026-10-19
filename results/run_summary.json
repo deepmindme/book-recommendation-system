@@ -1,0 +1,47 @@
+{
+  "seed": 42,
+  "dataset_ratings": 979478,
+  "users": 53424,
+  "books": 10000,
+  "splits": {
+    "train": 658343,
+    "validation": 134308,
+    "test": 170108,
+    "cold_user_test": 6925,
+    "cold_book_test": 9794
+  },
+  "svd_parameters": {
+    "n_factors": 64,
+    "reg": 0.1,
+    "n_epochs": 30
+  },
+  "hybrid_weights_CF_SVD_Content": [
+    0.2,
+    0.2,
+    0.6
+  ],
+  "ranking_users": 2500,
+  "ranking_eligible": 30191,
+  "validation_ranking_users": 800,
+  "cold_users_evaluated": 299,
+  "cold_book_users_evaluated": 1000,
+  "cold_books": 100,
+  "best_ranking": "Content-Based",
+  "best_RMSE": "SVD",
+  "best_cold_book": "Hybrid",
+  "hybrid_difference_vs": "Content-Based",
+  "hybrid_ndcg5_difference": -0.002242721401414087,
+  "hybrid_difference_CI95": [
+    -0.006099657461288376,
+    0.0015973206745315575
+  ],
+  "versions": {
+    "numpy": "2.3.4",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "scikit-learn": "1.7.2",
+    "scikit-surprise": "1.1.5",
+    "matplotlib": "3.10.7",
+    "seaborn": "0.13.2"
+  }
+}
